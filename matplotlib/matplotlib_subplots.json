@@ -1,0 +1,13 @@
+{
+    "matplotlib_trabalhando_com_subplots": {
+      "criacao_subplots": "fig, ax = plt.subplots()",
+      "definir_rotulos": {
+        "xlabel": "ax.set_xlabel('Eixo X')",
+        "ylabel": "ax.set_ylabel('Eixo Y')",
+        "title": "ax.set_title('Título do gráfico')"
+      },
+      "ajuste_automatico_espacos": "plt.tight_layout()",
+      "ajuste_manual_espacos": "fig.subplots_adjust(hspace=0.5)"
+    }
+  }
+  

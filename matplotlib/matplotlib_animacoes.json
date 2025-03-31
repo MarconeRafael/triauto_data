@@ -1,0 +1,14 @@
+{
+    "matplotlib_animations": {
+      "importacao_animacao": "from matplotlib.animation import FuncAnimation",
+      "animacao_basica": {
+        "codigo": "ani = FuncAnimation(fig, update, frames=100, repeat=False)",
+        "descricao": "Cria uma animação simples."
+      },
+      "salvar_animacao": {
+        "codigo": "ani.save('animacao.mp4', writer='ffmpeg')",
+        "descricao": "Salva a animação como arquivo MP4."
+      }
+    }
+  }
+  

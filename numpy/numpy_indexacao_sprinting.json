@@ -1,0 +1,133 @@
+{
+    "numpy": {
+      "Indexação e Slicing": [
+        {
+          "nome": "take",
+          "descricao": "Retorna os elementos de um array de acordo com os índices fornecidos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "taken = np.take(arr, [1, 2])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.take.html"
+        },
+        {
+          "nome": "put",
+          "descricao": "Substitui os elementos do array nos índices fornecidos pelos novos valores.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "put = np.put(arr, [1, 2], [10, 20])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.put.html"
+        },
+        {
+          "nome": "choose",
+          "descricao": "Escolhe elementos de diferentes arrays com base nos índices fornecidos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "chosen = np.choose([0, 1, 2], [arr, arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.choose.html"
+        },
+        {
+          "nome": "diagonal",
+          "descricao": "Retorna a diagonal de um array bidimensional.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "diagonal = np.diagonal(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.diagonal.html"
+        },
+        {
+          "nome": "select",
+          "descricao": "Escolhe valores de acordo com condições fornecidas.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "selected = np.select([arr > 2, arr < 5], [arr * 2, arr / 2])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.select.html"
+        },
+        {
+          "nome": "compress",
+          "descricao": "Retorna os elementos do array que atendem à condição fornecida.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "compressed = np.compress(arr > 2, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.compress.html"
+        },
+        {
+          "nome": "extract",
+          "descricao": "Extrai os elementos do array que atendem a uma condição.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "extracted = np.extract(arr > 2, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.extract.html"
+        },
+        {
+          "nome": "where",
+          "descricao": "Retorna os índices dos elementos que atendem a uma condição.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "where = np.where(arr > 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.where.html"
+        },
+        {
+          "nome": "nonzero",
+          "descricao": "Retorna os índices dos elementos não zero do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "nonzero = np.nonzero(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.nonzero.html"
+        },
+        {
+          "nome": "argwhere",
+          "descricao": "Retorna os índices dos elementos que atendem a uma condição em forma de tupla.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "argwhere = np.argwhere(arr > 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.argwhere.html"
+        },
+        {
+          "nome": "argmax",
+          "descricao": "Retorna o índice do maior valor do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "argmax = np.argmax(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.argmax.html"
+        },
+        {
+          "nome": "argmin",
+          "descricao": "Retorna o índice do menor valor do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "argmin = np.argmin(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.argmin.html"
+        },
+        {
+          "nome": "argsort",
+          "descricao": "Retorna os índices que ordenariam o array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "argsort = np.argsort(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.argsort.html"
+        },
+        {
+          "nome": "argpartition",
+          "descricao": "Retorna os índices que partem o array em duas partes de acordo com o valor de ordenação.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "argpartition = np.argpartition(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.argpartition.html"
+        }
+      ]
+    }
+  }
+  

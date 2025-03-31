@@ -1,0 +1,217 @@
+{
+    "pandas": {
+      "Criação de objetos": [
+        {
+          "nome": "DataFrame",
+          "descricao": "Cria um DataFrame a partir de dados fornecidos (lista, dicionário, array, etc.).",
+          "parametros": [
+            {
+              "nome": "data",
+              "tipo": "array-like, dict, ou DataFrame",
+              "descricao": "Os dados que serão usados para criar o DataFrame.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "array-like ou None",
+              "descricao": "Rótulos para as linhas do DataFrame.",
+              "default": null
+            },
+            {
+              "nome": "columns",
+              "tipo": "array-like ou None",
+              "descricao": "Rótulos para as colunas do DataFrame.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df = pd.DataFrame(data)",
+            "uso": "print(df)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html"
+        },
+        {
+          "nome": "Series",
+          "descricao": "Cria uma Series a partir de dados fornecidos.",
+          "parametros": [
+            {
+              "nome": "data",
+              "tipo": "array-like, iterable, ou dict",
+              "descricao": "Os dados que serão usados para criar a Series.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "array-like ou None",
+              "descricao": "Rótulos para os dados na Series.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s = pd.Series(data)",
+            "uso": "print(s)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.html"
+        },
+        {
+          "nome": "Index",
+          "descricao": "Cria um objeto Index a partir de dados fornecidos.",
+          "parametros": [
+            {
+              "nome": "data",
+              "tipo": "array-like ou iterable",
+              "descricao": "Os dados que serão usados para criar o Index.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx = pd.Index(data)",
+            "uso": "print(idx)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.html"
+        },
+        {
+          "nome": "Categorical",
+          "descricao": "Cria um objeto Categorical, usado para dados de categorias.",
+          "parametros": [
+            {
+              "nome": "data",
+              "tipo": "array-like, categoria, ou Categorical",
+              "descricao": "Os dados que serão usados para criar o Categorical.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "cat = pd.Categorical(data)",
+            "uso": "print(cat)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Categorical.html"
+        },
+        {
+          "nome": "Timestamp",
+          "descricao": "Cria um objeto Timestamp a partir de uma string ou dados de data/hora.",
+          "parametros": [
+            {
+              "nome": "date",
+              "tipo": "string, datetime-like ou int",
+              "descricao": "A data que será convertida para Timestamp.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "timestamp = pd.Timestamp('2025-01-01')",
+            "uso": "print(timestamp)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Timestamp.html"
+        },
+        {
+          "nome": "Timedelta",
+          "descricao": "Cria um objeto Timedelta representando uma diferença entre datas/horas.",
+          "parametros": [
+            {
+              "nome": "days",
+              "tipo": "int ou str",
+              "descricao": "O número de dias que será usado para criar o Timedelta.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "timedelta = pd.Timedelta(days=1)",
+            "uso": "print(timedelta)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Timedelta.html"
+        },
+        {
+          "nome": "date_range",
+          "descricao": "Cria um intervalo de datas, a partir de uma data inicial e um número de períodos.",
+          "parametros": [
+            {
+              "nome": "start",
+              "tipo": "string, datetime-like",
+              "descricao": "Data inicial do intervalo.",
+              "default": null
+            },
+            {
+              "nome": "periods",
+              "tipo": "int",
+              "descricao": "Número de períodos a gerar.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "date_range = pd.date_range(start='2025-01-01', periods=5)",
+            "uso": "print(date_range)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.date_range.html"
+        },
+        {
+          "nome": "period_range",
+          "descricao": "Cria um intervalo de períodos, a partir de uma data inicial e um número de períodos.",
+          "parametros": [
+            {
+              "nome": "start",
+              "tipo": "string, datetime-like",
+              "descricao": "Data inicial do intervalo.",
+              "default": null
+            },
+            {
+              "nome": "periods",
+              "tipo": "int",
+              "descricao": "Número de períodos a gerar.",
+              "default": null
+            },
+            {
+              "nome": "freq",
+              "tipo": "string",
+              "descricao": "Frequência de intervalos ('D' para dias, 'M' para meses, etc.).",
+              "default": "'D'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "period_range = pd.period_range(start='2025-01-01', periods=5, freq='D')",
+            "uso": "print(period_range)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.period_range.html"
+        },
+        {
+          "nome": "timedelta_range",
+          "descricao": "Cria um intervalo de Timedeltas, a partir de um valor inicial e um número de períodos.",
+          "parametros": [
+            {
+              "nome": "start",
+              "tipo": "string, datetime-like",
+              "descricao": "Valor inicial do intervalo de Timedelta.",
+              "default": null
+            },
+            {
+              "nome": "periods",
+              "tipo": "int",
+              "descricao": "Número de períodos a gerar.",
+              "default": null
+            },
+            {
+              "nome": "freq",
+              "tipo": "string",
+              "descricao": "Frequência de intervalo (por exemplo, 'D' para dias).",
+              "default": "'D'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "timedelta_range = pd.timedelta_range(start='0 days', periods=5, freq='D')",
+            "uso": "print(timedelta_range)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.timedelta_range.html"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,155 @@
+{
+    "pandas": {
+      "Outros utilitários": [
+        {
+          "nome": "unique",
+          "descricao": "Retorna os valores únicos de um array-like.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "array-like",
+              "descricao": "Dados dos quais serão extraídos os valores únicos.",
+              "default": "df['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "unique_vals = pd.unique(df['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.unique.html"
+        },
+        {
+          "nome": "factorize",
+          "descricao": "Codifica os valores únicos como inteiros e retorna um array com os códigos e os valores únicos.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "array-like",
+              "descricao": "Dados a serem fatorados.",
+              "default": "df['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "factorized_vals = pd.factorize(df['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.factorize.html"
+        },
+        {
+          "nome": "notna",
+          "descricao": "Retorna uma máscara booleana indicando quais valores não são nulos.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "array-like",
+              "descricao": "Dados para verificação de valores não nulos.",
+              "default": "df['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "na_vals = pd.notna(df['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.notna.html"
+        },
+        {
+          "nome": "isna",
+          "descricao": "Retorna uma máscara booleana indicando quais valores são nulos.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "array-like",
+              "descricao": "Dados para verificação de valores nulos.",
+              "default": "df['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "na_vals = pd.isna(df['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.isna.html"
+        },
+        {
+          "nome": "eval",
+          "descricao": "Avalia uma expressão string utilizando o ambiente do pandas.",
+          "parametros": [
+            {
+              "nome": "expr",
+              "tipo": "string",
+              "descricao": "Expressão a ser avaliada.",
+              "default": "df['A'] + df['B']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "eval_result = pd.eval(\"df['A'] + df['B']\")"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.eval.html"
+        },
+        {
+          "nome": "option_context",
+          "descricao": "Define opções temporárias do pandas usando um context manager.",
+          "parametros": [
+            {
+              "nome": "key",
+              "tipo": "string",
+              "descricao": "Nome da opção a ser modificada.",
+              "default": "display.max_rows"
+            },
+            {
+              "nome": "value",
+              "tipo": "any",
+              "descricao": "Valor temporário para a opção.",
+              "default": 10
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "with pd.option_context('display.max_rows', 10):\n    print(df)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/user_guide/options.html#context-managers"
+        },
+        {
+          "nome": "set_option",
+          "descricao": "Define uma opção global do pandas.",
+          "parametros": [
+            {
+              "nome": "key",
+              "tipo": "string",
+              "descricao": "Nome da opção a ser configurada.",
+              "default": "display.max_rows"
+            },
+            {
+              "nome": "value",
+              "tipo": "any",
+              "descricao": "Valor para a opção.",
+              "default": 10
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "pd.set_option('display.max_rows', 10)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.set_option.html"
+        },
+        {
+          "nome": "reset_option",
+          "descricao": "Reseta uma opção do pandas para seu valor padrão.",
+          "parametros": [
+            {
+              "nome": "key",
+              "tipo": "string",
+              "descricao": "Nome da opção a ser resetada.",
+              "default": "display.max_rows"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "pd.reset_option('display.max_rows')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.reset_option.html"
+        }
+      ]
+    }
+  }
+  

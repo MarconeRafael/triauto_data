@@ -1,0 +1,10 @@
+{
+    "matplotlib_salvar_e_mostrar_graficos": {
+      "mostrar_grafico": "plt.show()",
+      "salvar_png": "plt.savefig('grafico.png')",
+      "salvar_pdf": "plt.savefig('grafico.pdf')",
+      "salvar_svg": "plt.savefig('grafico.svg')",
+      "fechar_figura": "plt.close()"
+    }
+  }
+  

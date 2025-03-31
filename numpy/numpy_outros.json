@@ -1,0 +1,133 @@
+{
+    "numpy": {
+      "Outras Funções Úteis": [
+        {
+          "nome": "unique",
+          "descricao": "Encontra os elementos únicos em um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "unique = np.unique(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html"
+        },
+        {
+          "nome": "sort",
+          "descricao": "Ordena os elementos de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sort = np.sort(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html"
+        },
+        {
+          "nome": "partition",
+          "descricao": "Particiona um array em relação a um valor especificado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "partition = np.partition(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.partition.html"
+        },
+        {
+          "nome": "bincount",
+          "descricao": "Conta o número de ocorrências de cada valor em um array de inteiros não negativos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "bincount = np.bincount(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.bincount.html"
+        },
+        {
+          "nome": "histogram",
+          "descricao": "Calcula o histograma de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "histogram = np.histogram(arr, bins=10)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.histogram.html"
+        },
+        {
+          "nome": "digitize",
+          "descricao": "Encontra em qual intervalo de bins os valores de um array caem.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "digitize = np.digitize(arr, bins=[1, 2, 3])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.digitize.html"
+        },
+        {
+          "nome": "cumsum",
+          "descricao": "Calcula a soma acumulada dos elementos de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cumsum = np.cumsum(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html"
+        },
+        {
+          "nome": "cumprod",
+          "descricao": "Calcula o produto acumulado dos elementos de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cumprod = np.cumprod(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cumprod.html"
+        },
+        {
+          "nome": "diff",
+          "descricao": "Calcula a diferença entre elementos consecutivos de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "diff = np.diff(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.diff.html"
+        },
+        {
+          "nome": "ediff1d",
+          "descricao": "Calcula a diferença entre elementos consecutivos, com algumas opções de ajustes.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ediff1d = np.ediff1d(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ediff1d.html"
+        },
+        {
+          "nome": "gradient",
+          "descricao": "Calcula o gradiente de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "gradient = np.gradient(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.gradient.html"
+        },
+        {
+          "nome": "meshgrid",
+          "descricao": "Cria grids 2D a partir de arrays 1D.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "meshgrid = np.meshgrid(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html"
+        },
+        {
+          "nome": "mgrid",
+          "descricao": "Cria uma grade de coordenadas utilizando intervalos definidos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "mgrid = np.mgrid[0:3, 0:3]"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.mgrid.html"
+        },
+        {
+          "nome": "ogrid",
+          "descricao": "Cria uma grade aberta, útil para otimizar memória.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ogrid = np.ogrid[0:3, 0:3]"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ogrid.html"
+        }
+      ]
+    }
+  }
+  

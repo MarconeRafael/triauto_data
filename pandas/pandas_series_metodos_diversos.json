@@ -1,0 +1,124 @@
+{
+    "pandas": {
+      "Series - Métodos Diversos": [
+        {
+          "nome": "quantile",
+          "descricao": "Retorna o valor na quantil especificado (por exemplo, a mediana com 0.5).",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_quantile = s.quantile(0.5)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.quantile.html"
+        },
+        {
+          "nome": "apply",
+          "descricao": "Aplica uma função a cada elemento da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_apply = s.apply(lambda x: x + 1)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.apply.html"
+        },
+        {
+          "nome": "map",
+          "descricao": "Aplica uma função a cada valor individual da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_map = s.map(lambda x: x * 2)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html"
+        },
+        {
+          "nome": "pipe",
+          "descricao": "Permite aplicar uma função à Series e retornar o resultado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_pipe = s.pipe(lambda s: s + 1)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.pipe.html"
+        },
+        {
+          "nome": "str.contains",
+          "descricao": "Verifica se uma string contém um padrão especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_contains = s.str.contains('abc')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.contains.html"
+        },
+        {
+          "nome": "str.startswith",
+          "descricao": "Verifica se cada elemento da Series começa com o prefixo especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_startswith = s.str.startswith('A')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.startswith.html"
+        },
+        {
+          "nome": "str.endswith",
+          "descricao": "Verifica se cada elemento da Series termina com o sufixo especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_endswith = s.str.endswith('B')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.endswith.html"
+        },
+        {
+          "nome": "str.replace",
+          "descricao": "Substitui substrings de cada string na Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_replace = s.str.replace('A', 'X')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.replace.html"
+        },
+        {
+          "nome": "str.extract",
+          "descricao": "Extrai padrões de expressão regular de cada string na Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_extract = s.str.extract(r'(\\d+)')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.extract.html"
+        },
+        {
+          "nome": "str.split",
+          "descricao": "Divide cada string da Series em uma lista, usando o delimitador especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_split = s.str.split(',')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.split.html"
+        },
+        {
+          "nome": "str.upper",
+          "descricao": "Converte todas as letras de cada string para maiúsculas.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_upper = s.str.upper()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.upper.html"
+        },
+        {
+          "nome": "str.lower",
+          "descricao": "Converte todas as letras de cada string para minúsculas.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_lower = s.str.lower()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.lower.html"
+        },
+        {
+          "nome": "str.strip",
+          "descricao": "Remove espaços em branco no início e no final de cada string da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_str_strip = s.str.strip()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.str.strip.html"
+        }
+      ]
+    }
+  }
+  

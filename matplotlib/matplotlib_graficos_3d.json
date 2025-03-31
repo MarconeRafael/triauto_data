@@ -1,0 +1,11 @@
+{
+    "matplotlib_graficos_tridimensionais": {
+      "import_3d": "from mpl_toolkits.mplot3d import Axes3D",
+      "linha_3d": "ax.plot3D([1, 2, 3], [4, 5, 6], [7, 8, 9])",
+      "dispersao_3d": "ax.scatter3D([1, 2, 3], [4, 5, 6], [7, 8, 9])",
+      "superficie_3d": "ax.plot_surface([1, 2, 3], [4, 5, 6], [7, 8, 9])",
+      "wireframe_3d": "ax.plot_wireframe([1, 2, 3], [4, 5, 6], [7, 8, 9])",
+      "contornos_3d": "ax.contour3D([1, 2, 3], [4, 5, 6], [7, 8, 9])"
+    }
+  }
+  

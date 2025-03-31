@@ -1,0 +1,196 @@
+{
+    "numpy": {
+      "Manipulação de Arrays": [
+        {
+          "nome": "reshape",
+          "descricao": "Altera a forma de um array sem alterar seus dados.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "reshaped = np.reshape(arr, (3, 1))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.reshape.html"
+        },
+        {
+          "nome": "ravel",
+          "descricao": "Retorna uma cópia plana do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "raveled = arr.ravel()"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ravel.html"
+        },
+        {
+          "nome": "flatten",
+          "descricao": "Retorna uma cópia plana do array, mas ao contrário de `ravel`, sempre retorna uma nova cópia.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "flattened = arr.flatten()"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.flatten.html"
+        },
+        {
+          "nome": "transpose",
+          "descricao": "Retorna a transposta do array, ou seja, inverte as dimensões.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "transposed = arr.T"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.transpose.html"
+        },
+        {
+          "nome": "swapaxes",
+          "descricao": "Troca os eixos de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "swapped_axes = np.swapaxes(arr, 0, 1)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.swapaxes.html"
+        },
+        {
+          "nome": "moveaxis",
+          "descricao": "Move os eixos de um array para novas posições.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "moved_axis = np.moveaxis(arr, 0, 1)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.moveaxis.html"
+        },
+        {
+          "nome": "expand_dims",
+          "descricao": "Expande as dimensões de um array inserindo um novo eixo.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "expanded = np.expand_dims(arr, axis=0)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html"
+        },
+        {
+          "nome": "squeeze",
+          "descricao": "Remove as dimensões de tamanho 1 de um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "squeezed = np.squeeze(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.squeeze.html"
+        },
+        {
+          "nome": "concatenate",
+          "descricao": "Concatena uma sequência de arrays ao longo de um determinado eixo.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "concatenated = np.concatenate([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html"
+        },
+        {
+          "nome": "stack",
+          "descricao": "Empilha arrays ao longo de um novo eixo.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "stacked = np.stack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.stack.html"
+        },
+        {
+          "nome": "hstack",
+          "descricao": "Empilha arrays horizontalmente (ao longo do eixo 1).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "hstacked = np.hstack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.hstack.html"
+        },
+        {
+          "nome": "vstack",
+          "descricao": "Empilha arrays verticalmente (ao longo do eixo 0).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "vstacked = np.vstack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.vstack.html"
+        },
+        {
+          "nome": "dstack",
+          "descricao": "Empilha arrays ao longo do eixo 2.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "dstacked = np.dstack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.dstack.html"
+        },
+        {
+          "nome": "column_stack",
+          "descricao": "Empilha arrays 1D como colunas em um array 2D.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "column_stacked = np.column_stack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.column_stack.html"
+        },
+        {
+          "nome": "row_stack",
+          "descricao": "Empilha arrays 1D como linhas em um array 2D.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "row_stacked = np.row_stack([arr, arr])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.row_stack.html"
+        },
+        {
+          "nome": "split",
+          "descricao": "Divide um array em uma lista de sub-arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "splitted = np.split(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.split.html"
+        },
+        {
+          "nome": "hsplit",
+          "descricao": "Divide um array em sub-arrays horizontalmente.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "hsplitted = np.hsplit(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.hsplit.html"
+        },
+        {
+          "nome": "vsplit",
+          "descricao": "Divide um array em sub-arrays verticalmente.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "vsplitted = np.vsplit(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.vsplit.html"
+        },
+        {
+          "nome": "dsplit",
+          "descricao": "Divide um array em sub-arrays ao longo do eixo 2.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "dsplitted = np.dsplit(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.dsplit.html"
+        },
+        {
+          "nome": "tile",
+          "descricao": "Repete o array de acordo com o número de vezes especificado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "tiled = np.tile(arr, 3)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.tile.html"
+        },
+        {
+          "nome": "repeat",
+          "descricao": "Repete os elementos de um array ao longo de um determinado eixo.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "repeated = np.repeat(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.repeat.html"
+        }
+      ]
+    }
+  }
+  

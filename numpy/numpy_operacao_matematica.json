@@ -1,0 +1,241 @@
+{
+    "numpy": {
+      "Operações Matemáticas": [
+        {
+          "nome": "add",
+          "descricao": "Realiza a soma de cada elemento do array com um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "add = np.add(arr, 1)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.add.html"
+        },
+        {
+          "nome": "subtract",
+          "descricao": "Realiza a subtração de cada elemento do array por um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "subtract = np.subtract(arr, 1)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.subtract.html"
+        },
+        {
+          "nome": "multiply",
+          "descricao": "Multiplica cada elemento do array por um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "multiply = np.multiply(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.multiply.html"
+        },
+        {
+          "nome": "divide",
+          "descricao": "Divide cada elemento do array por um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "divide = np.divide(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.divide.html"
+        },
+        {
+          "nome": "floor_divide",
+          "descricao": "Realiza a divisão inteira de cada elemento do array por um valor específico, arredondando para baixo.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "floor_divide = np.floor_divide(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.floor_divide.html"
+        },
+        {
+          "nome": "mod",
+          "descricao": "Calcula o módulo (resto da divisão) de cada elemento do array por um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "mod = np.mod(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.mod.html"
+        },
+        {
+          "nome": "power",
+          "descricao": "Eleva cada elemento do array a um valor específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "power = np.power(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.power.html"
+        },
+        {
+          "nome": "reciprocal",
+          "descricao": "Calcula o recíproco de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "reciprocal = np.reciprocal(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.reciprocal.html"
+        },
+        {
+          "nome": "negative",
+          "descricao": "Aplica o sinal negativo a cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "negative = np.negative(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.negative.html"
+        },
+        {
+          "nome": "absolute",
+          "descricao": "Calcula o valor absoluto de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "absolute = np.abs(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.abs.html"
+        },
+        {
+          "nome": "fabs",
+          "descricao": "Calcula o valor absoluto de cada elemento do array, tratando números de ponto flutuante.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "fabs = np.fabs(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fabs.html"
+        },
+        {
+          "nome": "sign",
+          "descricao": "Retorna o sinal de cada elemento do array (-1, 0, 1).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sign = np.sign(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sign.html"
+        },
+        {
+          "nome": "clip",
+          "descricao": "Limita os valores do array dentro de um intervalo específico.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "clip = np.clip(arr, 0, 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.clip.html"
+        },
+        {
+          "nome": "round",
+          "descricao": "Arredonda os elementos do array para um número específico de casas decimais.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "round_arr = np.round(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.round.html"
+        },
+        {
+          "nome": "ceil",
+          "descricao": "Arredonda os elementos do array para o próximo inteiro maior ou igual.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ceil = np.ceil(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ceil.html"
+        },
+        {
+          "nome": "floor",
+          "descricao": "Arredonda os elementos do array para o próximo inteiro menor ou igual.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "floor = np.floor(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.floor.html"
+        },
+        {
+          "nome": "trunc",
+          "descricao": "Arredonda os elementos do array para o inteiro mais próximo, removendo a parte decimal.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "trunc = np.trunc(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.trunc.html"
+        },
+        {
+          "nome": "exp",
+          "descricao": "Calcula o exponencial de cada elemento do array (e^x).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "exp = np.exp(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.exp.html"
+        },
+        {
+          "nome": "expm1",
+          "descricao": "Calcula e^x - 1 para cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "expm1 = np.expm1(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.expm1.html"
+        },
+        {
+          "nome": "log",
+          "descricao": "Calcula o logaritmo natural de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "log = np.log(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.log.html"
+        },
+        {
+          "nome": "log10",
+          "descricao": "Calcula o logaritmo na base 10 de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "log10 = np.log10(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.log10.html"
+        },
+        {
+          "nome": "log2",
+          "descricao": "Calcula o logaritmo na base 2 de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "log2 = np.log2(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.log2.html"
+        },
+        {
+          "nome": "log1p",
+          "descricao": "Calcula o logaritmo de (1 + x) para cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "log1p = np.log1p(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.log1p.html"
+        },
+        {
+          "nome": "sqrt",
+          "descricao": "Calcula a raiz quadrada de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sqrt = np.sqrt(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sqrt.html"
+        },
+        {
+          "nome": "cbrt",
+          "descricao": "Calcula a raiz cúbica de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cbrt = np.cbrt(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cbrt.html"
+        },
+        {
+          "nome": "square",
+          "descricao": "Eleva cada elemento do array ao quadrado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "square = np.square(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.square.html"
+        }
+      ]
+    }
+  }
+  

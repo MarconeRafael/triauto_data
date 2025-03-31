@@ -1,0 +1,180 @@
+{
+    "pandas": {
+      "Leitura de arquivos": [
+        {
+          "nome": "read_csv",
+          "descricao": "Lê um arquivo CSV e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "filepath_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho do arquivo CSV ou objeto semelhante a um arquivo.",
+              "default": null
+            },
+            {
+              "nome": "sep",
+              "tipo": "string",
+              "descricao": "Delimitador a ser usado no arquivo CSV.",
+              "default": ","
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_csv = pd.read_csv('file.csv', sep=',')",
+            "uso": "print(df_csv.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
+        },
+        {
+          "nome": "read_excel",
+          "descricao": "Lê um arquivo Excel e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "io",
+              "tipo": "string ou objeto ExcelFile",
+              "descricao": "Caminho do arquivo Excel ou objeto ExcelFile.",
+              "default": null
+            },
+            {
+              "nome": "sheet_name",
+              "tipo": "str, int, lista ou None",
+              "descricao": "Nome(s) da(s) planilha(s) a serem lidas.",
+              "default": "0"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_excel = pd.read_excel('file.xlsx', sheet_name=0)",
+            "uso": "print(df_excel.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html"
+        },
+        {
+          "nome": "read_json",
+          "descricao": "Lê um arquivo JSON e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "path_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho para o arquivo JSON ou objeto semelhante.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_json = pd.read_json('file.json')",
+            "uso": "print(df_json.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_json.html"
+        },
+        {
+          "nome": "read_sql",
+          "descricao": "Lê dados de uma consulta SQL e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "sql",
+              "tipo": "string",
+              "descricao": "Consulta SQL a ser executada.",
+              "default": null
+            },
+            {
+              "nome": "con",
+              "tipo": "objeto de conexão",
+              "descricao": "Conexão com o banco de dados.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_sql = pd.read_sql('SELECT * FROM table', con)",
+            "uso": "print(df_sql.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html"
+        },
+        {
+          "nome": "read_html",
+          "descricao": "Lê um arquivo HTML e retorna uma lista de DataFrames.",
+          "parametros": [
+            {
+              "nome": "io",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho do arquivo HTML ou objeto semelhante a um arquivo.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_html = pd.read_html('file.html')",
+            "uso": "print(df_html[0].head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_html.html"
+        },
+        {
+          "nome": "read_feather",
+          "descricao": "Lê um arquivo Feather e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "path",
+              "tipo": "string",
+              "descricao": "Caminho do arquivo Feather.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_feather = pd.read_feather('file.feather')",
+            "uso": "print(df_feather.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_feather.html"
+        },
+        {
+          "nome": "read_parquet",
+          "descricao": "Lê um arquivo Parquet e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "path",
+              "tipo": "string",
+              "descricao": "Caminho do arquivo Parquet.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_parquet = pd.read_parquet('file.parquet')",
+            "uso": "print(df_parquet.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html"
+        },
+        {
+          "nome": "read_clipboard",
+          "descricao": "Lê os dados da área de transferência (clipboard) e retorna um DataFrame.",
+          "parametros": [],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_clipboard = pd.read_clipboard()",
+            "uso": "print(df_clipboard.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_clipboard.html"
+        },
+        {
+          "nome": "read_pickle",
+          "descricao": "Lê um arquivo pickle e retorna um DataFrame.",
+          "parametros": [
+            {
+              "nome": "filepath_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho do arquivo pickle.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_pickle = pd.read_pickle('file.pkl')",
+            "uso": "print(df_pickle.head())"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.read_pickle.html"
+        }
+      ]
+    }
+  }
+  

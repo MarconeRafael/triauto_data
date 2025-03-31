@@ -1,0 +1,124 @@
+{
+    "numpy": {
+      "Álgebra Linear": [
+        {
+          "nome": "inv",
+          "descricao": "Calcula a inversa de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "inv = np.linalg.inv(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html"
+        },
+        {
+          "nome": "det",
+          "descricao": "Calcula o determinante de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "det = np.linalg.det(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.det.html"
+        },
+        {
+          "nome": "norm",
+          "descricao": "Calcula a norma de uma matriz ou vetor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "norm = np.linalg.norm(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html"
+        },
+        {
+          "nome": "solve",
+          "descricao": "Resolve um sistema de equações lineares.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "solve = np.linalg.solve(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html"
+        },
+        {
+          "nome": "eig",
+          "descricao": "Calcula os autovalores e autovetores de uma matriz quadrada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "eig = np.linalg.eig(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html"
+        },
+        {
+          "nome": "eigh",
+          "descricao": "Calcula os autovalores e autovetores de uma matriz Hermitiana ou simétrica.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "eigh = np.linalg.eigh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eigh.html"
+        },
+        {
+          "nome": "qr",
+          "descricao": "Realiza a decomposição QR de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "qr = np.linalg.qr(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.qr.html"
+        },
+        {
+          "nome": "svd",
+          "descricao": "Realiza a decomposição em valores singulares (SVD) de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "svd = np.linalg.svd(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html"
+        },
+        {
+          "nome": "pinv",
+          "descricao": "Calcula a pseudoinversa de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "pinv = np.linalg.pinv(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.pinv.html"
+        },
+        {
+          "nome": "cholesky",
+          "descricao": "Calcula a decomposição de Cholesky de uma matriz positiva definida.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cholesky = np.linalg.cholesky(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.cholesky.html"
+        },
+        {
+          "nome": "rank",
+          "descricao": "Calcula o posto de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "rank = np.linalg.matrix_rank(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.matrix_rank.html"
+        },
+        {
+          "nome": "cond",
+          "descricao": "Calcula o número de condição de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cond = np.linalg.cond(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.cond.html"
+        },
+        {
+          "nome": "eigvals",
+          "descricao": "Calcula os autovalores de uma matriz.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "eigvals = np.linalg.eigvals(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eigvals.html"
+        }
+      ]
+    }
+  }
+  

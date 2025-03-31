@@ -1,0 +1,220 @@
+{
+    "pandas": {
+      "DataFrame - Visualização e Informações": [
+        {
+          "nome": "head",
+          "descricao": "Retorna as primeiras N linhas do DataFrame.",
+          "parametros": [
+            {
+              "nome": "n",
+              "tipo": "int",
+              "descricao": "Número de linhas a serem retornadas.",
+              "default": 5
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_head = df.head(5)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html"
+        },
+        {
+          "nome": "tail",
+          "descricao": "Retorna as últimas N linhas do DataFrame.",
+          "parametros": [
+            {
+              "nome": "n",
+              "tipo": "int",
+              "descricao": "Número de linhas a serem retornadas.",
+              "default": 5
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_tail = df.tail(5)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.tail.html"
+        },
+        {
+          "nome": "info",
+          "descricao": "Exibe um resumo conciso do DataFrame, incluindo índices, tipos de dados e memória utilizada.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_info = df.info()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html"
+        },
+        {
+          "nome": "memory_usage",
+          "descricao": "Retorna o uso de memória de cada coluna do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_memory_usage = df.memory_usage()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.memory_usage.html"
+        },
+        {
+          "nome": "style",
+          "descricao": "Retorna um objeto Styler para formatação e estilização do DataFrame para exibição.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_style = df.style"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.style.html"
+        },
+        {
+          "nome": "plot",
+          "descricao": "Gera um gráfico a partir dos dados do DataFrame.",
+          "parametros": [
+            {
+              "nome": "kind",
+              "tipo": "string",
+              "descricao": "Tipo de gráfico (ex.: 'line', 'bar', etc.).",
+              "default": "line"
+            },
+            {
+              "nome": "x",
+              "tipo": "string",
+              "descricao": "Coluna a ser usada como eixo X.",
+              "default": "A"
+            },
+            {
+              "nome": "y",
+              "tipo": "string",
+              "descricao": "Coluna a ser usada como eixo Y.",
+              "default": "B"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_plot = df.plot(kind='line', x='A', y='B')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.html"
+        }
+      ],
+      "Series - Atributos e Operações": [
+        {
+          "nome": "index",
+          "descricao": "Retorna o índice da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_index = s.index"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.index.html"
+        },
+        {
+          "nome": "dtype",
+          "descricao": "Retorna o tipo de dado da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_dtype = s.dtype"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.dtype.html"
+        },
+        {
+          "nome": "shape",
+          "descricao": "Retorna a forma da Series (número de elementos).",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_shape = s.shape"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.shape.html"
+        },
+        {
+          "nome": "size",
+          "descricao": "Retorna o número total de elementos na Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_size = s.size"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.size.html"
+        },
+        {
+          "nome": "values",
+          "descricao": "Retorna os valores da Series como um array NumPy.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_values = s.values"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.values.html"
+        },
+        {
+          "nome": "name",
+          "descricao": "Retorna o nome da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_name = s.name"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.name.html"
+        },
+        {
+          "nome": "dropna",
+          "descricao": "Remove os valores nulos da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_dropna = s.dropna()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.dropna.html"
+        },
+        {
+          "nome": "fillna",
+          "descricao": "Preenche os valores nulos da Series com um valor especificado.",
+          "parametros": [
+            {
+              "nome": "value",
+              "tipo": "any",
+              "descricao": "Valor para preencher os nulos.",
+              "default": 0
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_fillna = s.fillna(0)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.fillna.html"
+        },
+        {
+          "nome": "replace",
+          "descricao": "Substitui valores na Series.",
+          "parametros": [
+            {
+              "nome": "to_replace",
+              "tipo": "any",
+              "descricao": "Valor a ser substituído.",
+              "default": 1
+            },
+            {
+              "nome": "value",
+              "tipo": "any",
+              "descricao": "Valor substituto.",
+              "default": 100
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_replace = s.replace(1, 100)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.replace.html"
+        },
+        {
+          "nome": "sort_values",
+          "descricao": "Ordena os valores da Series.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_sort_values = s.sort_values()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.sort_values.html"
+        },
+        {
+          "nome": "sort_index",
+          "descricao": "Ordena a Series pelo índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "s_sort_index = s.sort_index()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.sort_index.html"
+        }
+      ]
+    }
+  }
+  

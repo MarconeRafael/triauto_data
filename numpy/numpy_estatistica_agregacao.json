@@ -1,0 +1,115 @@
+{
+    "numpy": {
+      "Estatísticas e Agregação": [
+        {
+          "nome": "sum",
+          "descricao": "Calcula a soma dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sum_arr = np.sum(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html"
+        },
+        {
+          "nome": "mean",
+          "descricao": "Calcula a média dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "mean_arr = np.mean(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html"
+        },
+        {
+          "nome": "median",
+          "descricao": "Calcula a mediana dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "median_arr = np.median(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.median.html"
+        },
+        {
+          "nome": "std",
+          "descricao": "Calcula o desvio padrão dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "std_arr = np.std(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.std.html"
+        },
+        {
+          "nome": "var",
+          "descricao": "Calcula a variância dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "var_arr = np.var(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.var.html"
+        },
+        {
+          "nome": "min",
+          "descricao": "Retorna o valor mínimo dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "min_arr = np.min(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.min.html"
+        },
+        {
+          "nome": "max",
+          "descricao": "Retorna o valor máximo dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "max_arr = np.max(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.max.html"
+        },
+        {
+          "nome": "ptp",
+          "descricao": "Calcula a diferença entre o valor máximo e o valor mínimo dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ptp_arr = np.ptp(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ptp.html"
+        },
+        {
+          "nome": "percentile",
+          "descricao": "Calcula o valor de um percentil específico dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "percentile_arr = np.percentile(arr, 50)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.percentile.html"
+        },
+        {
+          "nome": "quantile",
+          "descricao": "Calcula o valor de um quantil específico dos elementos do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "quantile_arr = np.quantile(arr, 0.5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.quantile.html"
+        },
+        {
+          "nome": "corrcoef",
+          "descricao": "Calcula o coeficiente de correlação entre dois arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "corrcoef = np.corrcoef(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html"
+        },
+        {
+          "nome": "cov",
+          "descricao": "Calcula a matriz de covariância entre dois arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cov = np.cov(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cov.html"
+        }
+      ]
+    }
+  }
+  

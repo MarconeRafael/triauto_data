@@ -1,0 +1,123 @@
+{
+  "pandas": {
+    "Series - Estatísticas e Agregações": [
+      {
+        "nome": "count",
+        "descricao": "Retorna o número de elementos não nulos na Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_count = s.count()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.count.html"
+      },
+      {
+        "nome": "sum",
+        "descricao": "Retorna a soma dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_sum = s.sum()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.sum.html"
+      },
+      {
+        "nome": "mean",
+        "descricao": "Retorna a média dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_mean = s.mean()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.mean.html"
+      },
+      {
+        "nome": "median",
+        "descricao": "Retorna a mediana dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_median = s.median()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.median.html"
+      },
+      {
+        "nome": "std",
+        "descricao": "Retorna o desvio padrão dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_std = s.std()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.std.html"
+      },
+      {
+        "nome": "var",
+        "descricao": "Retorna a variância dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_var = s.var()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.var.html"
+      },
+      {
+        "nome": "min",
+        "descricao": "Retorna o valor mínimo dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_min = s.min()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.min.html"
+      },
+      {
+        "nome": "max",
+        "descricao": "Retorna o valor máximo dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_max = s.max()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.max.html"
+      },
+      {
+        "nome": "idxmin",
+        "descricao": "Retorna o índice do valor mínimo da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_idxmin = s.idxmin()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.idxmin.html"
+      },
+      {
+        "nome": "idxmax",
+        "descricao": "Retorna o índice do valor máximo da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_idxmax = s.idxmax()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.idxmax.html"
+      },
+      {
+        "nome": "describe",
+        "descricao": "Retorna um resumo estatístico dos elementos da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_describe = s.describe()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.describe.html"
+      },
+      {
+        "nome": "value_counts",
+        "descricao": "Retorna a contagem de valores únicos na Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_value_counts = s.value_counts()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html"
+      },
+      {
+        "nome": "mode",
+        "descricao": "Retorna os valores mais frequentes da Series.",
+        "codigo": {
+          "importacao": "import pandas as pd",
+          "criacao": "s_mode = s.mode()"
+        },
+        "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.mode.html"
+      }
+    ]
+  }
+}

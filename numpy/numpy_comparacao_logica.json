@@ -1,0 +1,142 @@
+{
+    "numpy": {
+      "Comparação e Lógica": [
+        {
+          "nome": "greater",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são maiores que um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "greater = np.greater(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.greater.html"
+        },
+        {
+          "nome": "greater_equal",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são maiores ou iguais a um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "greater_equal = np.greater_equal(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html"
+        },
+        {
+          "nome": "less",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são menores que um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "less = np.less(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.less.html"
+        },
+        {
+          "nome": "less_equal",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são menores ou iguais a um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "less_equal = np.less_equal(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html"
+        },
+        {
+          "nome": "equal",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são iguais a um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "equal = np.equal(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.equal.html"
+        },
+        {
+          "nome": "not_equal",
+          "descricao": "Retorna um array booleano, indicando onde os elementos de um array são diferentes de um valor.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "not_equal = np.not_equal(arr, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html"
+        },
+        {
+          "nome": "logical_and",
+          "descricao": "Realiza a operação lógica AND entre os arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "logical_and = np.logical_and(arr > 2, arr < 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.logical_and.html"
+        },
+        {
+          "nome": "logical_or",
+          "descricao": "Realiza a operação lógica OR entre os arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "logical_or = np.logical_or(arr > 2, arr < 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.logical_or.html"
+        },
+        {
+          "nome": "logical_xor",
+          "descricao": "Realiza a operação lógica XOR entre os arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "logical_xor = np.logical_xor(arr > 2, arr < 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.logical_xor.html"
+        },
+        {
+          "nome": "logical_not",
+          "descricao": "Realiza a operação lógica NOT em um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "logical_not = np.logical_not(arr > 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.logical_not.html"
+        },
+        {
+          "nome": "isfinite",
+          "descricao": "Verifica se os elementos do array são finitos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "isfinite = np.isfinite(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html"
+        },
+        {
+          "nome": "isinf",
+          "descricao": "Verifica se os elementos do array são infinitos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "isinf = np.isinf(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.isinf.html"
+        },
+        {
+          "nome": "isnan",
+          "descricao": "Verifica se os elementos do array são NaN (Not a Number).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "isnan = np.isnan(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.isnan.html"
+        },
+        {
+          "nome": "isneginf",
+          "descricao": "Verifica se os elementos do array são negativos infinitos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "isneginf = np.isneginf(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.isneginf.html"
+        },
+        {
+          "nome": "isposinf",
+          "descricao": "Verifica se os elementos do array são positivos infinitos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "isposinf = np.isposinf(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.isposinf.html"
+        }
+      ]
+    }
+  }
+  

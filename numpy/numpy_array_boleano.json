@@ -1,0 +1,34 @@
+{
+    "numpy": {
+      "Operações em Arrays Booleanos": [
+        {
+          "nome": "any",
+          "descricao": "Verifica se algum valor do array é verdadeiro (não zero).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "any = np.any(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.any.html"
+        },
+        {
+          "nome": "all",
+          "descricao": "Verifica se todos os valores do array são verdadeiros (não zero).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "all = np.all(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.all.html"
+        },
+        {
+          "nome": "count_nonzero",
+          "descricao": "Conta o número de elementos não zero no array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "count_nonzero = np.count_nonzero(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.count_nonzero.html"
+        }
+      ]
+    }
+  }
+  

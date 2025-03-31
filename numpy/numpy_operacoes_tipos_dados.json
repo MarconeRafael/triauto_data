@@ -1,0 +1,52 @@
+{
+    "numpy": {
+      "Operações com Tipos de Dados": [
+        {
+          "nome": "dtype",
+          "descricao": "Cria um tipo de dado específico. No exemplo, um tipo float32.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "dtype = np.dtype('float32')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.dtype.html"
+        },
+        {
+          "nome": "astype",
+          "descricao": "Converte o tipo de dado de um array para o tipo especificado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "astype = arr.astype('float32')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.astype.html"
+        },
+        {
+          "nome": "itemsize",
+          "descricao": "Retorna o tamanho (em bytes) de cada elemento no array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "itemsize = arr.itemsize"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.itemsize.html"
+        },
+        {
+          "nome": "byteswap",
+          "descricao": "Troca a ordem de bytes de um array (útil para converter endianness).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "byteswap = arr.byteswap()"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.byteswap.html"
+        },
+        {
+          "nome": "copy",
+          "descricao": "Cria uma cópia do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "copy = arr.copy()"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.copy.html"
+        }
+      ]
+    }
+  }
+  

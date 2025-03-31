@@ -1,0 +1,124 @@
+{
+    "pandas": {
+      "Index - Métodos Diversos": [
+        {
+          "nome": "astype",
+          "descricao": "Converte o tipo de dados do índice para o tipo especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx.astype('int64')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.astype.html"
+        },
+        {
+          "nome": "rename",
+          "descricao": "Renomeia o índice para o nome especificado.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_rename = idx.rename('New Name')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.rename.html"
+        },
+        {
+          "nome": "set_names",
+          "descricao": "Define novos nomes para os níveis do índice multi-nível.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_set_names = idx.set_names(['Level 1'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.set_names.html"
+        },
+        {
+          "nome": "append",
+          "descricao": "Adiciona novos valores ao índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_append = idx.append(pd.Index([4, 5]))"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.append.html"
+        },
+        {
+          "nome": "drop",
+          "descricao": "Remove um ou mais valores do índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_drop = idx.drop(1)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.drop.html"
+        },
+        {
+          "nome": "insert",
+          "descricao": "Insere um valor em uma posição específica no índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_insert = idx.insert(0, 0)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.insert.html"
+        },
+        {
+          "nome": "delete",
+          "descricao": "Remove um valor do índice na posição especificada.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_delete = idx.delete(0)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.delete.html"
+        },
+        {
+          "nome": "is_monotonic",
+          "descricao": "Verifica se os valores do índice são monotônicos (em ordem crescente ou decrescente).",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_is_monotonic = idx.is_monotonic"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.is_monotonic.html"
+        },
+        {
+          "nome": "is_unique",
+          "descricao": "Verifica se todos os valores do índice são únicos.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_is_unique = idx.is_unique"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.is_unique.html"
+        },
+        {
+          "nome": "duplicated",
+          "descricao": "Verifica se há valores duplicados no índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_duplicated = idx.duplicated()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.duplicated.html"
+        },
+        {
+          "nome": "get_loc",
+          "descricao": "Retorna a posição de um valor no índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_get_loc = idx.get_loc(3)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.get_loc.html"
+        },
+        {
+          "nome": "get_indexer",
+          "descricao": "Retorna os índices dos valores fornecidos no índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_get_indexer = idx.get_indexer([1, 2])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.get_indexer.html"
+        },
+        {
+          "nome": "to_list",
+          "descricao": "Converte o índice para uma lista.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "idx_to_list = idx.to_list()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Index.to_list.html"
+        }
+      ]
+    }
+  }
+  

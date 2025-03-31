@@ -1,0 +1,483 @@
+{
+    "pandas": {
+      "DataFrame - Atributos e Métodos": [
+        {
+          "nome": "index",
+          "descricao": "Retorna o índice do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_index = df.index"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.index.html"
+        },
+        {
+          "nome": "columns",
+          "descricao": "Retorna as colunas do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_columns = df.columns"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.columns.html"
+        },
+        {
+          "nome": "dtypes",
+          "descricao": "Retorna os tipos de dados das colunas do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_dtypes = df.dtypes"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dtypes.html"
+        },
+        {
+          "nome": "shape",
+          "descricao": "Retorna uma tupla representando a forma do DataFrame (número de linhas e colunas).",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_shape = df.shape"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html"
+        },
+        {
+          "nome": "size",
+          "descricao": "Retorna o número total de elementos no DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_size = df.size"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.size.html"
+        },
+        {
+          "nome": "values",
+          "descricao": "Retorna os valores do DataFrame como um array NumPy.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_values = df.values"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.values.html"
+        },
+        {
+          "nome": "loc",
+          "descricao": "Acessa linhas ou colunas do DataFrame utilizando labels.",
+          "parametros": [
+            {
+              "nome": "label",
+              "tipo": "valor ou lista de valores",
+              "descricao": "Label(s) para acesso das linhas ou colunas.",
+              "default": "0"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_loc = df.loc[0]"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html"
+        },
+        {
+          "nome": "iloc",
+          "descricao": "Acessa linhas ou colunas do DataFrame utilizando posições inteiras.",
+          "parametros": [
+            {
+              "nome": "posicao",
+              "tipo": "int ou lista de inteiros",
+              "descricao": "Posição para acesso das linhas ou colunas.",
+              "default": "0"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_iloc = df.iloc[0]"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html"
+        },
+        {
+          "nome": "at",
+          "descricao": "Acessa um valor escalar do DataFrame usando labels para linha e coluna.",
+          "parametros": [
+            {
+              "nome": "linha",
+              "tipo": "label",
+              "descricao": "Label da linha.",
+              "default": "0"
+            },
+            {
+              "nome": "coluna",
+              "tipo": "label",
+              "descricao": "Label da coluna.",
+              "default": "'A'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_at = df.at[0, 'A']"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.at.html"
+        },
+        {
+          "nome": "iat",
+          "descricao": "Acessa um valor escalar do DataFrame usando posições inteiras para linha e coluna.",
+          "parametros": [
+            {
+              "nome": "linha",
+              "tipo": "int",
+              "descricao": "Posição inteira da linha.",
+              "default": 0
+            },
+            {
+              "nome": "coluna",
+              "tipo": "int",
+              "descricao": "Posição inteira da coluna.",
+              "default": 0
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_iat = df.iat[0, 0]"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iat.html"
+        },
+        {
+          "nome": "filter",
+          "descricao": "Filtra o DataFrame com base em critérios de seleção de colunas ou linhas.",
+          "parametros": [
+            {
+              "nome": "items",
+              "tipo": "lista",
+              "descricao": "Lista de itens (colunas ou linhas) a serem filtrados.",
+              "default": "['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_filtered = df.filter(items=['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.filter.html"
+        },
+        {
+          "nome": "sample",
+          "descricao": "Retorna uma amostra aleatória de linhas do DataFrame.",
+          "parametros": [
+            {
+              "nome": "n",
+              "tipo": "int",
+              "descricao": "Número de linhas a serem amostradas.",
+              "default": 3
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_sample = df.sample(n=3)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sample.html"
+        },
+        {
+          "nome": "assign",
+          "descricao": "Cria e adiciona novas colunas ao DataFrame a partir de operações existentes.",
+          "parametros": [
+            {
+              "nome": "novas_colunas",
+              "tipo": "dict",
+              "descricao": "Dicionário com o nome da nova coluna e a operação a ser aplicada.",
+              "default": "{'C': df['A'] + df['B']}"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_assign = df.assign(C=df['A'] + df['B'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html"
+        },
+        {
+          "nome": "drop",
+          "descricao": "Remove colunas ou linhas do DataFrame.",
+          "parametros": [
+            {
+              "nome": "columns",
+              "tipo": "lista",
+              "descricao": "Lista das colunas a serem removidas.",
+              "default": "['A']"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_drop = df.drop(columns=['A'])"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop.html"
+        },
+        {
+          "nome": "rename",
+          "descricao": "Renomeia colunas ou índices do DataFrame.",
+          "parametros": [
+            {
+              "nome": "columns",
+              "tipo": "dict",
+              "descricao": "Dicionário com nomes antigos como chaves e novos nomes como valores.",
+              "default": "{'A': 'Alpha'}"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_rename = df.rename(columns={'A': 'Alpha'})"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html"
+        },
+        {
+          "nome": "set_index",
+          "descricao": "Define uma coluna do DataFrame como índice.",
+          "parametros": [
+            {
+              "nome": "keys",
+              "tipo": "string ou lista",
+              "descricao": "Coluna(s) que serão definidas como índice.",
+              "default": "'A'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_set_index = df.set_index('A')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.set_index.html"
+        },
+        {
+          "nome": "reset_index",
+          "descricao": "Reseta o índice do DataFrame para o padrão numérico.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_reset_index = df.reset_index()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reset_index.html"
+        },
+        {
+          "nome": "sort_values",
+          "descricao": "Ordena o DataFrame com base em uma ou mais colunas.",
+          "parametros": [
+            {
+              "nome": "by",
+              "tipo": "string ou lista",
+              "descricao": "Coluna(s) a serem usadas para ordenação.",
+              "default": "'A'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_sort_values = df.sort_values(by='A')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"
+        },
+        {
+          "nome": "sort_index",
+          "descricao": "Ordena o DataFrame pelo índice.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_sort_index = df.sort_index()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_index.html"
+        },
+        {
+          "nome": "replace",
+          "descricao": "Substitui valores do DataFrame conforme especificado.",
+          "parametros": [
+            {
+              "nome": "to_replace",
+              "tipo": "dict ou scalar",
+              "descricao": "Valores a serem substituídos.",
+              "default": "{'A': {1: 100}}"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_replace = df.replace({'A': {1: 100}})"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html"
+        },
+        {
+          "nome": "fillna",
+          "descricao": "Preenche valores nulos com um valor específico.",
+          "parametros": [
+            {
+              "nome": "value",
+              "tipo": "any",
+              "descricao": "Valor para preencher os nulos.",
+              "default": "0"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_fillna = df.fillna(0)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html"
+        },
+        {
+          "nome": "dropna",
+          "descricao": "Remove linhas ou colunas que contenham valores nulos.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_dropna = df.dropna()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html"
+        },
+        {
+          "nome": "ffill",
+          "descricao": "Preenche valores nulos propagando o último valor não nulo para frente.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_ffill = df.ffill()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.ffill.html"
+        },
+        {
+          "nome": "bfill",
+          "descricao": "Preenche valores nulos propagando o próximo valor não nulo para trás.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_bfill = df.bfill()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.bfill.html"
+        },
+        {
+          "nome": "interpolate",
+          "descricao": "Preenche valores nulos por interpolação.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_interpolate = df.interpolate()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html"
+        },
+        {
+          "nome": "count",
+          "descricao": "Retorna a contagem de valores não nulos por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_count = df.count()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.count.html"
+        },
+        {
+          "nome": "sum",
+          "descricao": "Retorna a soma dos valores por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_sum = df.sum()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sum.html"
+        },
+        {
+          "nome": "mean",
+          "descricao": "Retorna a média dos valores por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_mean = df.mean()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html"
+        },
+        {
+          "nome": "median",
+          "descricao": "Retorna a mediana dos valores por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_median = df.median()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.median.html"
+        },
+        {
+          "nome": "std",
+          "descricao": "Retorna o desvio padrão dos valores por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_std = df.std()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html"
+        },
+        {
+          "nome": "var",
+          "descricao": "Retorna a variância dos valores por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_var = df.var()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.var.html"
+        },
+        {
+          "nome": "min",
+          "descricao": "Retorna o valor mínimo por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_min = df.min()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.min.html"
+        },
+        {
+          "nome": "max",
+          "descricao": "Retorna o valor máximo por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_max = df.max()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.max.html"
+        },
+        {
+          "nome": "idxmin",
+          "descricao": "Retorna o índice do valor mínimo por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_idxmin = df.idxmin()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.idxmin.html"
+        },
+        {
+          "nome": "idxmax",
+          "descricao": "Retorna o índice do valor máximo por coluna.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_idxmax = df.idxmax()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.idxmax.html"
+        },
+        {
+          "nome": "describe",
+          "descricao": "Retorna estatísticas descritivas do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_describe = df.describe()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html"
+        },
+        {
+          "nome": "corr",
+          "descricao": "Retorna a matriz de correlação entre as colunas do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_corr = df.corr()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html"
+        },
+        {
+          "nome": "cov",
+          "descricao": "Retorna a matriz de covariância entre as colunas do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_cov = df.cov()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.cov.html"
+        },
+        {
+          "nome": "value_counts",
+          "descricao": "Retorna a contagem de valores únicos na coluna 'A' do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_value_counts = df['A'].value_counts()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html"
+        },
+        {
+          "nome": "mode",
+          "descricao": "Retorna a(s) moda(s) dos valores do DataFrame.",
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_mode = df.mode()"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mode.html"
+        }
+      ]
+    }
+  }
+  

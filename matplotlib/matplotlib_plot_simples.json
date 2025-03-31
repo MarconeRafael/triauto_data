@@ -1,0 +1,18 @@
+{
+    "matplotlib_criando_figuras_e_eixos": {
+      "nova_figura": "plt.figure()",
+      "multiplo_subplots": {
+        "descricao": "Cria subplots em uma única figura.",
+        "codigo": "fig, axes = plt.subplots(2, 2)"
+      },
+      "figura_e_eixo": {
+        "descricao": "Criação recomendada de figura e eixo.",
+        "codigo": "fig, ax = plt.subplots()"
+      },
+      "adicionar_subplot_a_figura": {
+        "codigo": "fig.add_subplot(111)",
+        "descricao": "Adiciona um único subplot (1x1) à figura."
+      }
+    }
+  }
+  

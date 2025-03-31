@@ -1,0 +1,265 @@
+{
+    "pandas": {
+      "Operações de junção e transformação": [
+        {
+          "nome": "concat",
+          "descricao": "Concatena objetos pandas ao longo de um eixo (linhas ou colunas).",
+          "parametros": [
+            {
+              "nome": "objs",
+              "tipo": "sequência de DataFrames",
+              "descricao": "Os DataFrames a serem concatenados.",
+              "default": null
+            },
+            {
+              "nome": "axis",
+              "tipo": "int, padrão 0",
+              "descricao": "Eixo ao longo do qual concatenar: 0 para linhas, 1 para colunas.",
+              "default": "0"
+            },
+            {
+              "nome": "ignore_index",
+              "tipo": "bool, padrão False",
+              "descricao": "Se True, o índice será ignorado e um novo índice será gerado.",
+              "default": "False"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_concat = pd.concat([df1, df2])",
+            "uso": "print(df_concat)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.concat.html"
+        },
+        {
+          "nome": "merge",
+          "descricao": "Realiza a junção de DataFrames com base em colunas ou índices comuns.",
+          "parametros": [
+            {
+              "nome": "left",
+              "tipo": "DataFrame",
+              "descricao": "O DataFrame da esquerda para a junção.",
+              "default": null
+            },
+            {
+              "nome": "right",
+              "tipo": "DataFrame",
+              "descricao": "O DataFrame da direita para a junção.",
+              "default": null
+            },
+            {
+              "nome": "on",
+              "tipo": "str ou lista",
+              "descricao": "Nome(s) das colunas ou índices em que a junção será realizada.",
+              "default": null
+            },
+            {
+              "nome": "how",
+              "tipo": "str, padrão 'inner'",
+              "descricao": "Tipo de junção: 'left', 'right', 'outer' ou 'inner'.",
+              "default": "'inner'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_merge = pd.merge(df1, df2, on='key')",
+            "uso": "print(df_merge)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.merge.html"
+        },
+        {
+          "nome": "melt",
+          "descricao": "Transforma um DataFrame de formato largo para formato longo.",
+          "parametros": [
+            {
+              "nome": "id_vars",
+              "tipo": "list-like",
+              "descricao": "Colunas a manter no formato largo.",
+              "default": null
+            },
+            {
+              "nome": "value_vars",
+              "tipo": "list-like, opcional",
+              "descricao": "Colunas que serão derretidas no formato longo.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_melt = pd.melt(df, id_vars=['A'])",
+            "uso": "print(df_melt)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.melt.html"
+        },
+        {
+          "nome": "pivot",
+          "descricao": "Reorganiza um DataFrame, transformando colunas em índices e vice-versa.",
+          "parametros": [
+            {
+              "nome": "index",
+              "tipo": "str ou array-like",
+              "descricao": "Nome(s) das colunas para serem usadas como índice.",
+              "default": null
+            },
+            {
+              "nome": "columns",
+              "tipo": "str ou array-like",
+              "descricao": "Nome(s) das colunas para serem transformadas em colunas.",
+              "default": null
+            },
+            {
+              "nome": "values",
+              "tipo": "str, opcional",
+              "descricao": "Coluna a ser usada como valores no novo DataFrame.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_pivot = pd.pivot(df, index='A', columns='B', values='C')",
+            "uso": "print(df_pivot)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.pivot.html"
+        },
+        {
+          "nome": "pivot_table",
+          "descricao": "Cria uma tabela dinâmica a partir de um DataFrame.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "str ou lista",
+              "descricao": "Coluna(s) a ser(em) agregadas.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "str ou lista",
+              "descricao": "Coluna(s) a serem usadas como índice.",
+              "default": null
+            },
+            {
+              "nome": "columns",
+              "tipo": "str ou lista",
+              "descricao": "Coluna(s) a serem usadas como colunas.",
+              "default": null
+            },
+            {
+              "nome": "aggfunc",
+              "tipo": "função, lista ou dicionário, padrão 'mean'",
+              "descricao": "Função para agregar os dados (como 'sum', 'mean', etc.).",
+              "default": "'mean'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_pivot_table = pd.pivot_table(df, values='C', index='A', columns='B')",
+            "uso": "print(df_pivot_table)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html"
+        },
+        {
+          "nome": "crosstab",
+          "descricao": "Cria uma tabela de contingência entre duas variáveis.",
+          "parametros": [
+            {
+              "nome": "values",
+              "tipo": "array-like, opcional",
+              "descricao": "Valores a serem usados para preencher a tabela de contingência.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "array-like",
+              "descricao": "Coluna(s) a serem usadas como índice na tabela.",
+              "default": null
+            },
+            {
+              "nome": "columns",
+              "tipo": "array-like",
+              "descricao": "Coluna(s) a serem usadas como colunas na tabela.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_crosstab = pd.crosstab(df['A'], df['B'])",
+            "uso": "print(df_crosstab)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html"
+        },
+        {
+          "nome": "get_dummies",
+          "descricao": "Cria variáveis indicadoras (dummy variables) a partir de variáveis categóricas.",
+          "parametros": [
+            {
+              "nome": "data",
+              "tipo": "array-like",
+              "descricao": "A coluna ou variável categórica para a qual as variáveis indicadoras serão criadas.",
+              "default": null
+            },
+            {
+              "nome": "prefix",
+              "tipo": "str ou lista, opcional",
+              "descricao": "Prefixo para as novas colunas dummy.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_dummies = pd.get_dummies(df['A'])",
+            "uso": "print(df_dummies)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html"
+        },
+        {
+          "nome": "cut",
+          "descricao": "Divide dados em intervalos discretos.",
+          "parametros": [
+            {
+              "nome": "x",
+              "tipo": "array-like",
+              "descricao": "Os dados que serão cortados em intervalos.",
+              "default": null
+            },
+            {
+              "nome": "bins",
+              "tipo": "int ou sequência",
+              "descricao": "Número ou limites dos intervalos.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_cut = pd.cut(df['A'], bins=3)",
+            "uso": "print(df_cut)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.cut.html"
+        },
+        {
+          "nome": "qcut",
+          "descricao": "Divide dados em quantis, ou intervalos com a mesma quantidade de dados.",
+          "parametros": [
+            {
+              "nome": "x",
+              "tipo": "array-like",
+              "descricao": "Os dados que serão cortados em intervalos.",
+              "default": null
+            },
+            {
+              "nome": "q",
+              "tipo": "int ou array-like",
+              "descricao": "Número de quantis ou um array com os quantis a serem usados.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df_qcut = pd.qcut(df['A'], q=3)",
+            "uso": "print(df_qcut)"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.qcut.html"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,79 @@
+{
+    "numpy": {
+      "Entrada e Saída de Dados": [
+        {
+          "nome": "loadtxt",
+          "descricao": "Carrega dados de um arquivo de texto para um array NumPy.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "loadtxt = np.loadtxt('file.txt')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html"
+        },
+        {
+          "nome": "savetxt",
+          "descricao": "Salva um array NumPy em um arquivo de texto.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "savetxt = np.savetxt('file.txt', arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.savetxt.html"
+        },
+        {
+          "nome": "load",
+          "descricao": "Carrega dados de um arquivo `.npy` (formato binário do NumPy) para um array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "load = np.load('file.npy')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.load.html"
+        },
+        {
+          "nome": "save",
+          "descricao": "Salva um array NumPy em um arquivo `.npy` (formato binário).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "save = np.save('file.npy', arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.save.html"
+        },
+        {
+          "nome": "savez",
+          "descricao": "Salva múltiplos arrays NumPy em um único arquivo `.npz` (formato compactado).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "savez = np.savez('file.npz', arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.savez.html"
+        },
+        {
+          "nome": "savez_compressed",
+          "descricao": "Salva múltiplos arrays NumPy em um arquivo `.npz` de forma compactada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "savez_compressed = np.savez_compressed('file.npz', arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.savez_compressed.html"
+        },
+        {
+          "nome": "fromfile",
+          "descricao": "Carrega dados de um arquivo binário para um array NumPy.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "fromfile = np.fromfile('file.bin', dtype='float32')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fromfile.html"
+        },
+        {
+          "nome": "tofile",
+          "descricao": "Salva um array NumPy em um arquivo binário.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "tofile = np.tofile('file.bin', arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ndarray.tofile.html"
+        }
+      ]
+    }
+  }
+  

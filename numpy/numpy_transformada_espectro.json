@@ -1,0 +1,79 @@
+{
+    "numpy": {
+      "Transformadas e Espectro": [
+        {
+          "nome": "fft",
+          "descricao": "Calcula a Transformada Rápida de Fourier (FFT) de uma sequência.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "fft = np.fft.fft(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html"
+        },
+        {
+          "nome": "ifft",
+          "descricao": "Calcula a Transformada Inversa Rápida de Fourier (IFFT) de uma sequência.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ifft = np.fft.ifft(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html"
+        },
+        {
+          "nome": "fft2",
+          "descricao": "Calcula a Transformada Rápida de Fourier 2D.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "fft2 = np.fft.fft2(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.fft2.html"
+        },
+        {
+          "nome": "ifft2",
+          "descricao": "Calcula a Transformada Inversa Rápida de Fourier 2D.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ifft2 = np.fft.ifft2(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft2.html"
+        },
+        {
+          "nome": "fftshift",
+          "descricao": "Desloca o zero da frequência para o centro da sequência transformada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "fftshift = np.fft.fftshift(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.fftshift.html"
+        },
+        {
+          "nome": "ifftshift",
+          "descricao": "Desloca o zero da frequência para a posição original antes da transformada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ifftshift = np.fft.ifftshift(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.ifftshift.html"
+        },
+        {
+          "nome": "rfft",
+          "descricao": "Calcula a Transformada Rápida de Fourier (FFT) de uma sequência real.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "rfft = np.fft.rfft(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.rfft.html"
+        },
+        {
+          "nome": "irfft",
+          "descricao": "Calcula a Transformada Inversa Rápida de Fourier (IFFT) de uma sequência real.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "irfft = np.fft.irfft(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fft.irfft.html"
+        }
+      ]
+    }
+  }
+  

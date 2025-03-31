@@ -1,0 +1,17 @@
+{
+    "matplotlib_importacao_configuracao_inicial": {
+      "importacao": "import matplotlib.pyplot as plt",
+      "descricao": "Importa o módulo matplotlib.pyplot para criação de gráficos.",
+      "estilos_predefinidos": {
+        "uso_estilo": "plt.style.use('ggplot')",
+        "descricao": "Aplica o estilo 'ggplot' ao gráfico."
+      },
+      "configuracao_global": {
+        "rcParams": {
+          "configuracao": "plt.rcParams['figure.figsize'] = (10, 5)",
+          "descricao": "Define o tamanho da figura (largura, altura)."
+        }
+      }
+    }
+  }
+  

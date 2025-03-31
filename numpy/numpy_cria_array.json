@@ -1,0 +1,151 @@
+{
+    "numpy": {
+      "Criação de Arrays": [
+        {
+          "nome": "array",
+          "descricao": "Cria um array a partir de uma lista ou sequência de valores.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arr = np.array([1, 2, 3])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.array.html"
+        },
+        {
+          "nome": "zeros",
+          "descricao": "Cria um array preenchido com zeros, com a forma especificada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "zeros = np.zeros((2, 3))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.zeros.html"
+        },
+        {
+          "nome": "ones",
+          "descricao": "Cria um array preenchido com uns, com a forma especificada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "ones = np.ones((2, 3))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.ones.html"
+        },
+        {
+          "nome": "full",
+          "descricao": "Cria um array preenchido com o valor especificado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "full = np.full((2, 3), 7)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.full.html"
+        },
+        {
+          "nome": "eye",
+          "descricao": "Cria uma matriz identidade (diagonal com 1s).",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "eye = np.eye(3)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.eye.html"
+        },
+        {
+          "nome": "identity",
+          "descricao": "Cria uma matriz identidade com a forma especificada.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "identity = np.identity(3)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.identity.html"
+        },
+        {
+          "nome": "empty",
+          "descricao": "Cria um array sem inicialização, ou seja, com valores indeterminados.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "empty = np.empty((2, 2))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.empty.html"
+        },
+        {
+          "nome": "arange",
+          "descricao": "Cria um array com valores dentro de um intervalo especificado.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arange = np.arange(0, 10, 2)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html"
+        },
+        {
+          "nome": "linspace",
+          "descricao": "Cria um array com valores igualmente espaçados entre dois pontos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "linspace = np.linspace(0, 1, 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html"
+        },
+        {
+          "nome": "logspace",
+          "descricao": "Cria um array com valores igualmente espaçados em uma escala logarítmica.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "logspace = np.logspace(0, 2, 5)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.logspace.html"
+        },
+        {
+          "nome": "meshgrid",
+          "descricao": "Cria duas matrizes de grade a partir de arrays de coordenadas.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "meshgrid = np.meshgrid(np.arange(0, 5), np.arange(0, 5))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html"
+        },
+        {
+          "nome": "diag",
+          "descricao": "Cria uma matriz diagonal a partir de uma lista ou array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "diag = np.diag([1, 2, 3])"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.diag.html"
+        },
+        {
+          "nome": "tri",
+          "descricao": "Cria uma matriz triangular inferior ou superior.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "tri = np.tri(3)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.tri.html"
+        },
+        {
+          "nome": "fromfunction",
+          "descricao": "Cria um array aplicando uma função a um conjunto de índices.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "function_from = np.fromfunction(lambda i, j: i + j, (3, 3))"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fromfunction.html"
+        },
+        {
+          "nome": "fromiter",
+          "descricao": "Cria um array a partir de um iterável.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "iter_from = np.fromiter([1, 2, 3], dtype=int)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.fromiter.html"
+        },
+        {
+          "nome": "frombuffer",
+          "descricao": "Cria um array a partir de um buffer de dados.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "buffer_from = np.frombuffer(b'Hello', dtype='S1')"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html"
+        }
+      ]
+    }
+  }
+  

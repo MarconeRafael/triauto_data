@@ -1,0 +1,151 @@
+{
+    "numpy": {
+      "Funções Trigonométricas": [
+        {
+          "nome": "sin",
+          "descricao": "Calcula o seno de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sin_arr = np.sin(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sin.html"
+        },
+        {
+          "nome": "cos",
+          "descricao": "Calcula o cosseno de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cos_arr = np.cos(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cos.html"
+        },
+        {
+          "nome": "tan",
+          "descricao": "Calcula a tangente de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "tan_arr = np.tan(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.tan.html"
+        },
+        {
+          "nome": "arcsin",
+          "descricao": "Calcula o arco seno de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arcsin_arr = np.arcsin(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arcsin.html"
+        },
+        {
+          "nome": "arccos",
+          "descricao": "Calcula o arco cosseno de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arccos_arr = np.arccos(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arccos.html"
+        },
+        {
+          "nome": "arctan",
+          "descricao": "Calcula o arco tangente de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arctan_arr = np.arctan(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arctan.html"
+        },
+        {
+          "nome": "arctan2",
+          "descricao": "Calcula o arco tangente de dois arrays, levando em consideração o sinal de ambos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arctan2_arr = np.arctan2(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arctan2.html"
+        },
+        {
+          "nome": "deg2rad",
+          "descricao": "Converte um array de ângulos de graus para radianos.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "deg2rad = np.deg2rad(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.deg2rad.html"
+        },
+        {
+          "nome": "rad2deg",
+          "descricao": "Converte um array de ângulos de radianos para graus.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "rad2deg = np.rad2deg(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.rad2deg.html"
+        },
+        {
+          "nome": "hypot",
+          "descricao": "Calcula a raiz quadrada de somatórios de quadrados (distância euclidiana) entre dois arrays.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "hypot = np.hypot(arr, arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.hypot.html"
+        },
+        {
+          "nome": "sinh",
+          "descricao": "Calcula o seno hiperbólico de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "sinh = np.sinh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.sinh.html"
+        },
+        {
+          "nome": "cosh",
+          "descricao": "Calcula o cosseno hiperbólico de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "cosh = np.cosh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.cosh.html"
+        },
+        {
+          "nome": "tanh",
+          "descricao": "Calcula a tangente hiperbólica de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "tanh = np.tanh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.tanh.html"
+        },
+        {
+          "nome": "arcsinh",
+          "descricao": "Calcula o arco seno hiperbólico de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arcsinh = np.arcsinh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arcsinh.html"
+        },
+        {
+          "nome": "arccosh",
+          "descricao": "Calcula o arco cosseno hiperbólico de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arccosh = np.arccosh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arccosh.html"
+        },
+        {
+          "nome": "arctanh",
+          "descricao": "Calcula o arco tangente hiperbólica de cada elemento do array.",
+          "codigo": {
+            "importacao": "import numpy as np",
+            "criacao": "arctanh = np.arctanh(arr)"
+          },
+          "documentacao": "https://numpy.org/doc/stable/reference/generated/numpy.arctanh.html"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,198 @@
+{
+    "pandas": {
+      "Escrita de arquivos": [
+        {
+          "nome": "to_csv",
+          "descricao": "Escreve um DataFrame em um arquivo CSV.",
+          "parametros": [
+            {
+              "nome": "path_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho para o arquivo CSV ou objeto semelhante.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "boolean",
+              "descricao": "Se True, inclui o índice no arquivo.",
+              "default": "True"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_csv('file.csv', index=False)",
+            "uso": "print('Arquivo CSV gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html"
+        },
+        {
+          "nome": "to_excel",
+          "descricao": "Escreve um DataFrame em um arquivo Excel.",
+          "parametros": [
+            {
+              "nome": "excel_writer",
+              "tipo": "string ou ExcelWriter",
+              "descricao": "Caminho para o arquivo Excel ou objeto ExcelWriter.",
+              "default": null
+            },
+            {
+              "nome": "sheet_name",
+              "tipo": "string",
+              "descricao": "Nome da planilha onde os dados serão gravados.",
+              "default": "'Sheet1'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_excel('file.xlsx', sheet_name='Sheet1', index=False)",
+            "uso": "print('Arquivo Excel gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_excel.html"
+        },
+        {
+          "nome": "to_json",
+          "descricao": "Escreve um DataFrame em um arquivo JSON.",
+          "parametros": [
+            {
+              "nome": "path_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho para o arquivo JSON ou objeto semelhante.",
+              "default": null
+            },
+            {
+              "nome": "orient",
+              "tipo": "string",
+              "descricao": "Formato de serialização do JSON ('split', 'records', 'index', etc.).",
+              "default": "'records'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_json('file.json', orient='records')",
+            "uso": "print('Arquivo JSON gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html"
+        },
+        {
+          "nome": "to_sql",
+          "descricao": "Escreve um DataFrame em uma tabela SQL.",
+          "parametros": [
+            {
+              "nome": "name",
+              "tipo": "string",
+              "descricao": "Nome da tabela SQL.",
+              "default": null
+            },
+            {
+              "nome": "con",
+              "tipo": "objeto de conexão",
+              "descricao": "Conexão com o banco de dados.",
+              "default": null
+            },
+            {
+              "nome": "if_exists",
+              "tipo": "string",
+              "descricao": "O que fazer se a tabela já existir ('fail', 'replace', 'append').",
+              "default": "'fail'"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_sql('table', con, if_exists='replace', index=False)",
+            "uso": "print('Dados gravados na tabela SQL com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html"
+        },
+        {
+          "nome": "to_html",
+          "descricao": "Escreve um DataFrame em um arquivo HTML.",
+          "parametros": [
+            {
+              "nome": "buf",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho para o arquivo HTML ou objeto semelhante.",
+              "default": null
+            },
+            {
+              "nome": "index",
+              "tipo": "boolean",
+              "descricao": "Se True, inclui o índice no arquivo HTML.",
+              "default": "True"
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_html('file.html', index=False)",
+            "uso": "print('Arquivo HTML gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_html.html"
+        },
+        {
+          "nome": "to_feather",
+          "descricao": "Escreve um DataFrame em um arquivo Feather.",
+          "parametros": [
+            {
+              "nome": "path",
+              "tipo": "string",
+              "descricao": "Caminho para o arquivo Feather.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_feather('file.feather')",
+            "uso": "print('Arquivo Feather gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_feather.html"
+        },
+        {
+          "nome": "to_parquet",
+          "descricao": "Escreve um DataFrame em um arquivo Parquet.",
+          "parametros": [
+            {
+              "nome": "path",
+              "tipo": "string",
+              "descricao": "Caminho para o arquivo Parquet.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_parquet('file.parquet')",
+            "uso": "print('Arquivo Parquet gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_parquet.html"
+        },
+        {
+          "nome": "to_clipboard",
+          "descricao": "Copia o conteúdo de um DataFrame para a área de transferência.",
+          "parametros": [],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_clipboard()",
+            "uso": "print('Dados copiados para a área de transferência!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_clipboard.html"
+        },
+        {
+          "nome": "to_pickle",
+          "descricao": "Escreve um DataFrame em um arquivo pickle.",
+          "parametros": [
+            {
+              "nome": "filepath_or_buffer",
+              "tipo": "string ou objeto file-like",
+              "descricao": "Caminho para o arquivo pickle ou objeto semelhante.",
+              "default": null
+            }
+          ],
+          "codigo": {
+            "importacao": "import pandas as pd",
+            "criacao": "df.to_pickle('file.pkl')",
+            "uso": "print('Arquivo Pickle gerado com sucesso!')"
+          },
+          "documentacao": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_pickle.html"
+        }
+      ]
+    }
+  }
+  
